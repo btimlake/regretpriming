@@ -51,6 +51,8 @@ black = BlackIndex(screenNumber);
 %% call scripts
 regretTask;
 regretTask1shot;
+window;
+windowRect;
 [player1Earnings] = patentTaskBTMP(particNum, DateTime, window, windowRect, 'random');
 
 sca;

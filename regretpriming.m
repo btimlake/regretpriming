@@ -1,3 +1,5 @@
+clear all;
+
 addpath(matlabroot,'REGRET_task');
 addpath(matlabroot,'patentTaskBTMP');
 addpath(matlabroot,'ratingslider');
@@ -51,8 +53,9 @@ black = BlackIndex(screenNumber);
 %% call scripts
 regretTask;
 regretTask1shot;
-[player1Earnings] = patentTaskBTMP(particNum, DateTime, window, windowRect, 'random');
+[player1Earnings] = patentTaskBTMP(particNum, DateTime, window, windowRect, 'random', 5);
 
 sca;
 
 ShowCursor;
+                                                               
